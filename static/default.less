@@ -1,0 +1,75 @@
+@back_color: #EEEEEE;
+@border_color: #CCCCCC;
+@box_color: #FDFDFD;
+
+@sidebar_width: 160px;
+
+html {
+   height: 100%;
+}
+body {
+   margin: 0;
+   background-color: @back_color;
+   height: 100%;
+}
+
+
+hr {
+	border:0px;
+	color:@border_color;
+	background-color:@border_color;
+	height: 1px;
+	width: 100%;
+	text-align: left;
+   margin: 8px 0px 0px 0px;
+   padding: 0px;
+}
+
+#box {
+   width: 60%;
+   height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   background-color: @box_color;
+}
+
+#topbanner {
+   width: 100%;
+   text-align: center;
+   font-size: 5;
+
+}
+
+#sidebar {
+   float: left;
+   margin-top: 50px;
+   padding-right: 20px;
+   width: @sidebar_width;
+
+   /* Nicer lists in the sidebar with double arrows */
+   ul {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+   }
+   li {
+      background-image: url(arrow_right.gif);
+      background-repeat: no-repeat;
+      background-position: 5px 5px;
+      padding-left: 20px;
+   }
+
+   hr {
+      margin-bottom: 8px;
+   }
+}
+
+#content {
+   padding-top: 50px;
+   padding-left: 20px;
+   border: 0px solid @border_color;
+   border-width: 0px 0px 0px 1px;
+   margin-left: @sidebar_width;
+   height: 100%;
+}
+
