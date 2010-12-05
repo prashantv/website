@@ -2,7 +2,7 @@
 @border_color: #CCCCCC;
 @box_color: #FDFDFD;
 
-@sidebar_width: 160px;
+@sidebar_width: 200px;
 
 html {
    height: 100%;
@@ -11,8 +11,19 @@ body {
    margin: 0;
    background-color: @back_color;
    height: 100%;
+	font-family: Helvetica, Calibri, Arial, sans-serif;
+	color: #555A60;
 }
 
+a {
+	color: #5060C0;
+}
+a:hover {
+	color: #28E;
+}
+a:visited {
+	color: #555;
+}
 
 hr {
 	border:0px;
@@ -27,7 +38,6 @@ hr {
 
 #box {
    width: 60%;
-   height: 100%;
    margin-left: auto;
    margin-right: auto;
    background-color: @box_color;
@@ -35,8 +45,20 @@ hr {
 
 #topbanner {
    width: 100%;
-   text-align: center;
+   text-align: right;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 0px 10px;
    font-size: 5;
+	#name {
+		font-size: 32px;
+		width: 90%;
+		font-family: Tahoma, Geneva, sans-serif;
+		margin: 0px;
+		padding: 0px;
+		color: #579;
+		
+		
+	}
 
 }
 
@@ -46,17 +68,23 @@ hr {
    padding-right: 20px;
    width: @sidebar_width;
 
+	a, span {
+		margin: 5px 5px 5px 5px;
+	}
+
    /* Nicer lists in the sidebar with double arrows */
    ul {
       list-style-type: none;
       padding: 0px;
       margin: 0px;
+		margin-top: 10px;
    }
    li {
       background-image: url(arrow_right.gif);
       background-repeat: no-repeat;
       background-position: 5px 5px;
       padding-left: 20px;
+		text-align: left;
    }
 
    hr {
@@ -65,11 +93,21 @@ hr {
 }
 
 #content {
-   padding-top: 50px;
+   padding-top: 0px;
    padding-left: 20px;
-   border: 0px solid @border_color;
-   border-width: 0px 0px 0px 1px;
+   border-left: 1px solid @border_color;
+	height: 70%;
+	min-height: 500px;
    margin-left: @sidebar_width;
-   height: 100%;
 }
 
+#footer {
+	text-align: right;
+   width: 60%;
+   margin-left: auto;
+   margin-right: auto;
+	padding-top: 15px;
+	padding-right: 10px;
+}
+
+/* vim:set syntax=css */
