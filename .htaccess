@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteBase /~prashant/prashantv
+
+RewriteRule ^([a-z]+)$ base.php?req=$1 [L]
