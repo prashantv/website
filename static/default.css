@@ -70,6 +70,7 @@ hr {
   min-height: 500px;
   margin-left: 200px;
 }
+#realcontent { padding: 30px 25px 40px 5px; }
 #footer {
   text-align: right;
   width: 60%;
