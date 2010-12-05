@@ -1,11 +1,11 @@
 <?php
 
-$content= "Page not found!";
+$content= "<h3>Page not found!</h3>";
 $title = "Prashant Varanasi";
 function loadParts($req) {
    global $content, $title;
    $fileName = "data/$req";
-   if(file_exists($fileName) || 1) {
+   if(file_exists($fileName)) {
       $contents = file("data/$req");
       $title = $contents[0];
       array_shift($contents);
@@ -13,8 +13,8 @@ function loadParts($req) {
    } 
 }
 
-$req = $_POST['page'];
-loadParts("about");
+$req = $_GET['req'];
+loadParts($req);
 
 ?>
 <!DOCTYPE html>
